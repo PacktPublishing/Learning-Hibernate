@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class entity-name="DynamicEntity">
+		<id name="id" type="long" column="MAP_ID">
+			<generator class="sequence" />
+		</id>
+		<property name="firstname" type="string" column="FIRSTNAME" />
+		<property name="lastname" type="string" column="LASTNAME" />
+		<property name="address" type="string" column="ADDRESS" />
+		<property name="phone" type="string" column="PHONE" />
+	</class>
+</hibernate-mapping>
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mastering Hibernate Application</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="/MHS/resources/css/application.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script
+	src="https://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+<script
+	src="https://cdn.datatables.net/1.10.10/js/dataTables.bootstrap.min.js"></script>
+<script src="/MHS/resources/js/application.js"></script>
+
+
+</head>
+<body>
+
+	<div class="container">
+		<h1>Mastering Hibernate</h1>
+		<h2>Person Application</h2>
+
+		<div class="alert alert-success">
+		  <a href="#" class="close closeAlert" aria-label="close">&times;</a>
+		  <strong>Success!</strong> <div id="successMessage"></div>
+		</div>
+		
+		<div class="alert alert-danger">
+		  <a href="#" class="close closeAlert" aria-label="close">&times;</a>
+		  <strong>Error!</strong> <div id="errorMessage"></div>
+		</div>
+		
+		<p>
+			<a href="#" id="addPersonLink">Add New Person</a>
+		</p>
+
+		<p></p>
+
+		<div id="list">
+			<table id="personTable" class="table table-striped">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>First Name</th>
+						<th>Last Name</th>
+						<th>Soc Sec Number</th>
+						<th>Birth Date</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+			</table>
+		</div>
+
+	</div>
+
+	<div id="personAddUpdateModal" title="Person Data">
+		<form id="addUpdateForm">
+			<table id="addUpdateTable" class="mytable">
+				<tr>
+					<td>id:</td>
+					<td><div id="personId"></div></td>
+				</tr>
+				<tr>
+					<td>first name:</td>
+					<td><input type="text" name="firstname"></td>
+				</tr>
+				<tr>
+					<td>last name:</td>
+					<td><input type="text" name="lastname"></td>
+				</tr>
+				<tr>
+					<td>SSN:</td>
+					<td><input type="text" name="ssn"></td>
+				</tr>
+				<tr>
+					<td>Birth Date:</td>
+					<td><input type="text" name="birthdate"></td>
+				</tr>
+				<tr>
+					<td><input type="reset" name="CancelUpdate" value="Cancel"
+						id="cancelUpdateButton"></td>
+					<td><input type="button" name="update" value="Update"
+						id="updatePersonButton"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+
+</body>
+</html>

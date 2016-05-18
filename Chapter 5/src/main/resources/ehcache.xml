@@ -1,0 +1,23 @@
+<ehcache>
+
+    <diskStore path="./target/tmp"/>
+
+    <defaultCache
+        maxElementsInMemory="5"
+        eternal="false"
+        timeToIdleSeconds="120"
+        timeToLiveSeconds="120"
+        overflowToDisk="true"
+        />
+
+    <cache name="personCache"
+        maxElementsInMemory="500"
+        eternal="false"
+        timeToIdleSeconds="300"
+        timeToLiveSeconds="600"
+        overflowToDisk="true"
+        />
+
+    <!-- Place configuration for your caches following -->
+
+</ehcache>
